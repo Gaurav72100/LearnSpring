@@ -15,6 +15,14 @@
     
     
     </bean>
+    
+    <bean name="emps2"  class="com.model.Employee">
+    <constructor-arg name="id" value="101"/>
+     <constructor-arg name="salary" value="111111"/>
+      <constructor-arg name="name" value="gk"/>
+       <constructor-arg name="gender" value="male"/>
+    
+    </bean>
 
     <!-- bean definitions here -->
 </beans>
