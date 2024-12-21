@@ -6,16 +6,23 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean name="epms" class="com.model.Employee">
-    
+
+     <bean name="add" class="com.model.Address">
+     <property name="street" value="1109"/>
+     <property name="city" value="noida"/>
+     <property name="state" value="Uttar Pradesh"/>
+     </bean>
+
+    <bean name="emp" class="com.model.Employee">
     <property name="id" value="1"/>
      <property name="salary" value="10000000"/>
       <property name="name" value="Gaurav"/>
        <property name="gender" value="male"/>
+       <property name="address" ref="add"/>
     
     
     </bean>
-    
+    <!--
     <bean name="emps2"  class="com.model.Employee">
     <constructor-arg name="id" value="101"/>
      <constructor-arg name="salary" value="111111"/>
@@ -24,5 +31,6 @@
     
     </bean>
 
+-->
     <!-- bean definitions here -->
 </beans>

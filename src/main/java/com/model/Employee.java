@@ -4,16 +4,23 @@ public class Employee {
 
 	int id ,salary;
 	String name,gender;
+	Address address;
+	
+	
+	
+	
+	
 	public Employee() {
 		super();
 		
 	}
-	public Employee(int id, int salary, String name, String gender) {
+	public Employee(int id, int salary, String name, String gender, Address address) {
 		super();
 		this.id = id;
 		this.salary = salary;
 		this.name = name;
 		this.gender = gender;
+		this.address=address;
 	}
 	public int getId() {
 		return id;
@@ -39,9 +46,16 @@ public class Employee {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", salary=" + salary + ", name=" + name + ", gender=" + gender + "]";
+		return "Employee [id=" + id + ", salary=" + salary + ", name=" + name + ", gender=" + gender+", address="+address + "]";
 	}
 	
 	
