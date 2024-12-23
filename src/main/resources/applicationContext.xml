@@ -6,7 +6,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean name="emp1" class="com.model.Employee">
+    <bean name="emp1,ess" class="com.model.Employee">
     
     <property name="id" value="1"/>
      <property name="salary" value="10000000"/>
