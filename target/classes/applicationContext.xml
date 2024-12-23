@@ -6,7 +6,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
+          <!-- Setter injection called-->
+  <!--        
      <bean name="add" class="com.model.Address">
      <property name="street" value="1109"/>
      <property name="city" value="noida"/>
@@ -22,15 +23,26 @@
     
     
     </bean>
-    <!--
+    -->
+   
+   
+   <!--By using Constructor Injection-->
+   <bean id="adds" class="com.model.Address">
+   
+   <constructor-arg value="1002"></constructor-arg>
+   <constructor-arg value="Agra"></constructor-arg>
+   <constructor-arg value="UP"></constructor-arg>
+   </bean>
+   
     <bean name="emps2"  class="com.model.Employee">
     <constructor-arg name="id" value="101"/>
      <constructor-arg name="salary" value="111111"/>
       <constructor-arg name="name" value="gk"/>
        <constructor-arg name="gender" value="male"/>
+       <constructor-arg ref="adds"></constructor-arg>
     
     </bean>
 
--->
+
     <!-- bean definitions here -->
 </beans>

@@ -48,9 +48,11 @@ public class Employee {
 	}
 	
 	public Address getAddress() {
+		System.out.println("setter called");
 		return address;
 	}
 	public void setAddress(Address address) {
+		
 		this.address = address;
 	}
 	@Override
