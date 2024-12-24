@@ -4,6 +4,7 @@ public class Employee {
 
 	int id ,salary;
 	String name,gender;
+	Address address;
 	public Employee() {
 		super();
 		
@@ -14,6 +15,14 @@ public class Employee {
 		this.salary = salary;
 		this.name = name;
 		this.gender = gender;
+	}
+	
+	
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	public int getId() {
 		return id;
@@ -44,6 +53,13 @@ public class Employee {
 		return "Employee [id=" + id + ", salary=" + salary + ", name=" + name + ", gender=" + gender + "]";
 	}
 	
+	public  void show() {
+		
+		System.out.println("id is:"+id);
+		System.out.println("Name is :"+name);
+		System.out.println("Address is:"+address);
+		
+	}
 	
 	
 }
