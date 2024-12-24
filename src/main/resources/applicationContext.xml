@@ -16,7 +16,7 @@
     
     </bean>
     
-    <bean name="emps2"  class="com.model.Employee">
+    <bean name="epms2"  class="com.model.Employee">
     <constructor-arg name="id" value="101"/>
      <constructor-arg name="salary" value="111111"/>
       <constructor-arg name="name" value="gk"/>
